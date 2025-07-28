@@ -11,3 +11,11 @@ def draw_board(board):
     print(board[4] + '|'  + board [5] + '|' + board [6])
     print('-+-+-')
     print(board[1] + '|'  + board [2] + '|' + board [3])
+
+def who_goes_first():
+    """Randomly choose which player goes first."""
+    if random.randint(0, 1) == 0:
+        return 'computer'
+    else:
+        return 'player'
+
