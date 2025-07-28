@@ -19,3 +19,5 @@ def who_goes_first():
     else:
         return 'player'
 
+def make_move(board, letter, move):
+    board[move] = letter
