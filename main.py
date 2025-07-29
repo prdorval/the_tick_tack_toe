@@ -12,6 +12,7 @@ def draw_board(board):
     print('-+-+-')
     print(board[1] + '|'  + board [2] + '|' + board [3])
 
+
 def input_player_letter():
     """Lets the player enter which letter they want 
     to be. Returns a list with the player's letter 
@@ -30,3 +31,14 @@ def input_player_letter():
         return ["O", "X"]
     
 print (input_player_letter())
+
+def who_goes_first():
+    """Randomly choose which player goes first."""
+    if random.randint(0, 1) == 0:
+        return 'computer'
+    else:
+        return 'player'
+
+def make_move(board, letter, move):
+    board[move] = letter
+
